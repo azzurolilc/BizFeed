@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Affectiva JavaScript SDK MR Demo</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="demo/css/bootstrap-darkly.min.css" />
+    <link href="demo/css/demo.css" rel="stylesheet" type="text/css" />
+
+    <!-- outside vendor files -->
+    <script src="demo/js/vendor/jquery-2.1.4.js"></script>
+    <script src="demo/js/vendor/d3.min.js"></script>
+
+    <!-- demo files -->
+    <script src="demo/js/run_demo.js"></script>
+    <script src="https://download.affectiva.com/js/3.1/affdex.js"></script>
+    
+</head>
+
+<body class="container">
+<div id="text-width"></div>
+<div id="lightbox"></div>
+<div id="demo-setup">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div id="facevideo-node"></div>
+        </div>
+    </div>
+    <div id="messages" class="row">
+        <div class="col-md-6 col-md-offset-3 demo-message" id="msg-starting-webcam">
+            <div class="alert alert-info" role="alert">Connecting to webcam...</div>
+        </div>
+        <div class="col-md-6 col-md-offset-3 demo-message" id="msg-webcam-failure">
+            <div class="alert alert-danger" role="alert"><strong>Error: </strong>Failed to connect to webcam.</div>
+        </div>
+        <div class="col-md-6 col-md-offset-3 demo-message" id="msg-detector-status">
+            <div class="alert alert-info" role="alert">Loading and starting the emotions detector...</div>
+        </div>
+        <div class="col-md-6 col-md-offset-3 demo-message" id="msg-initialized">
+            <div class="alert alert-info" role="alert">Emotion detector initialized...</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="row" id="video-container">
+    <div class="col-md-12 text-center">
+        <div id="player" style="pointer-events: none"></div>
+        <div id="svg-container">
+            <div class="row">
+                <div id="ul-wrapper" class="col-md-2">
+                    <ul id="nav">
+                    <li class="all buttons all-face all-box box-squared" id="all"><span>Show all</span></li>
+                    <li class="joy buttons smiling-face joy-box box-squared" id="joy" onClick="JSSDKDemo.responses(this.id)"><span>Joy</span></li>
+                    <li class="anger buttons angry-face anger-box box-squared" id="anger" onClick="JSSDKDemo.responses(this.id)"><span>Anger</span></li>
+                    <li class="disgust buttons disgusted-face disgust-box box-squared" id="disgust"  onClick="JSSDKDemo.responses(this.id)"><span>Disgust</span></li>
+                    <li class="contempt buttons contempt-face contempt-box box-squared" id="contempt"  onClick="JSSDKDemo.responses(this.id)"><span>Contempt</span></li>
+                    <li class="surprise buttons surprise-face surprise-box box-squared" id="surprise"  onClick="JSSDKDemo.responses(this.id)"><span>Surprise</span></li>
+                    </ul>
+                </div>
+                <div id="svg-wrapper" class="col-md-8 text-center">
+                    <svg id="svg-curve"></svg>
+                </div>
+
+                <div id="play-again" class="col-md-2">
+                  <div class="well">
+                    <p>Frame capture complete!</p>
+                    <p><small>Watch the video synchronized with your emotions.</small></p>
+                    <p>&nbsp;</p>
+                    <button id="btn-play-again" class="btn btn-primary">Ok, got it</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
