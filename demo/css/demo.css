@@ -1,13 +1,76 @@
+
+nav {
+   font-size: 170%;
+   font-family: 'Open Sans Condensed', sans-serif;
+   background-color: white;
+}
+
 body {
-    background-color: #111;
-    margin-top: 15px;
+    background-color: dark; 
     margin-bottom: 15px;
+    font-size: 130%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    align-items: center;
 }
 
 h3 {
     padding: 0px;
     margin: 0px;
     padding-bottom: 10px;
+}
+
+.v {
+    height:500px;
+    position: relative;
+}
+
+.imgsize {
+    width: 700;
+    height: 393.75;
+    alt:photo;
+}
+
+.butt {
+   border: 0px;
+   width: 646px;
+   font-size: 24px;
+   background-color: lightBlue;
+   font-weight: bold;
+   cursor:pointer;
+   opacity: .8;
+}
+
+.butt:hover {
+   background-color: #60D3F0;
+   color:white;
+   opacity: .95
+}
+
+.butt_watched {
+   border: 0px;
+   width: 646px;
+   font-size: 24px;
+   background-color: lightBlue;
+   font-weight: bold;
+   cursor:pointer;
+   opacity: .3;
+}
+
+.butt_watched:hover {
+   background-color: #58D3F7;
+   color:white;
+   opacity: .7
+}
+
+
+#watched {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+#watched:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
 #lightbox {

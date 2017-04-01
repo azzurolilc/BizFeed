@@ -2,58 +2,141 @@
 <html>
 <head>
 
-<title>eAd</title>
+  <title>eAd</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./demo/css/demo.css">
 
 </head>
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+      data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <img src="logo2.png" class="navbar-brand"></img>
+    <a class="navbar-brand" href="#">GSU Hack</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+<!--         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+  <li><a href="#">Link</a></li> -->
+<!--         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li> -->
+      </ul>
+<!--       <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Mz. X</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">History</a></li>
+<!--             <li><a href="#">Foobar</a></li>
+-->            <li role="separator" class="divider"></li>
+<li><a href="#">Log Out</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+
+
 <body>
 
-<h1>Pick up your favorite video and enjoy !</h1>
+
+  <div class="container" align="center">
+    <section>
+<!--       <h1>WWF</h1>-->      
+      <p>Welcome Back! You have 2 videos left to watch:)</p>
+    </section>
+    <div>
 
 
+      <div class="container">
+        <div class="row">
 
-<div class="container">
-  <div class="row">
+          <div class="v">
+            <h3>Massive Black Holes Whip Dark Matter Into a Frenzy</h3>
+            <img class="imgsize" src="https://img.youtube.com/vi/B88UyrkryRw/maxresdefault.jpg" />
+            <!--       <iframe width="560" height="315" src="https://www.youtube.com/embed/B88UyrkryRw" frameborder="0" allowfullscreen></iframe> -->
+            <div style="position:fixed,0,0;">
+            <form action="index.php">
+             <input class="butt" type="submit" value="Watch Now" />
+           </form>
+           </div>
+         </div>
 
-    <div class="col-sm-4 text-center">
-      <h3>Video 1</h3>
-      <video id="myVideo" width="320" height="176" controls loop>
-		<source src="mov_bbb.mp4" type="video/mp4">
-		Your browser does not support HTML5 video.
-	  </video>
-	  <form action="index.php">
-    	  <input type="submit" value="Watch this one" />
-	  </form>
-    </div>
+<!-- 
+     <div class="v">
+      <h3>Suit Up and Fly High in NASA's Science Spy Plane</h3>
+      <img class="imgsize" src="https://img.youtube.com/vi/298OiFwpvvo/mqdefault.jpg"></img>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/298OiFwpvvo" frameborder="0" allowfullscreen></iframe>
+      <form action="index.php">
+       <input class="butt" type="submit" value="Watch this one" />
+     </form>
+   </div> -->
 
-    <div class="col-sm-4 text-center">
-      <h3>Video 2</h3>
-      <video id="myVideo" width="320" height="176" controls loop>
-		<source src="mov_bbb.mp4" type="video/mp4">
-		Your browser does not support HTML5 video.
-	  </video>
-	  <form action="index.php">
-    	  <input type="submit" value="Watch this one" />
-	  </form>
-    </div>
+   <div class="v">
+    <h3>NASA Sets a Fire in Space—For Science!</h3>
+    <img class="imgsize" src="https://img.youtube.com/vi/qA6HLeGw8xg/maxresdefault.jpg" ></img>
 
-    <div class="col-sm-4 text-center">
-      <h3>Video 3</h3>
-      <video id="myVideo" width="320" height="176" controls loop>
-		<source src="mov_bbb.mp4" type="video/mp4">
-		Your browser does not support HTML5 video.
-	  </video>
-	  <form action="index.php">
-    	  <input type="submit" value="Watch this one" />
-	  </form>
-    </div>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/qA6HLeGw8xg" frameborder="0" allowfullscreen></iframe> -->
+    <form action="index.php">
+     <input class="butt" type="submit" value="Watch Now" />
+   </form>
+ </div>
 
-  </div>
+ <div class="v">
+  <h3>[Watched]Science of Swimming Ft. Ryan Lochte & Conor Dwyer</h3>
+  <img id="watched" class="imgsize"  src="https://img.youtube.com/vi/tbzigjiQ45g/maxresdefault.jpg"></img>
+  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/tbzigjiQ45g" frameborder="0" allowfullscreen></iframe> -->
+  <form action="index.php">
+    <input class="butt_watched" type="submit" value="Watch Again" />
+  </form>
+</div>
+
+</div>
 </div>
 
 </body>
