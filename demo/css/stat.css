@@ -1,0 +1,17 @@
+th, td {
+    padding: 10px;
+    white-space:nowrap;
+}
+
+.imgsize {
+    height: 75%;
+    width: 75%;
+    margin:0px
+/*    alt:photo;
+*/}
+
+.liquidFillGaugeText { 
+	font-family: Helvetica; 
+	font-weight: bold; 
+	height: 200;
+}
