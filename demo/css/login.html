@@ -24,41 +24,22 @@
 </head>
 
 
-<script>
-var text = document.getElementById("inputusername").value;
-
-function nextpage() {
-        if (text=="admin"){
-          document.getElementById("gotopage").action = "index.php";
-        }
-        else {
-        document.getElementById("gotopage").action = "index0.php";
-      }
-        // document.getElementById("curuser1").value = text;
-}
-</script>
-
-
 <body>
-  <form id="gotopage" method="get">
+  <form action="/action_page.php">
     <div class="imgcontainer">
     <img src="logo2.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
       <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="username" id="inputusername" required>
+      <input type="text" placeholder="Enter Username" name="uname" required>
 
       <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" required>
+      <input type="password" placeholder="Enter Password" name="psw" required>
 
-      <button class="button"  onclick="nextpage()" >Login</button>
+      <button class="button">Login</button>
       <input type="checkbox" checked="checked"> Remember me
     </div>
-
-
-
-
 
 <!--     <div class="container" style="background-color:#f1f1f1">
       <button type="button" class="cancelbtn">Cancel</button>

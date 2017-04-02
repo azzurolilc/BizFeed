@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     var isChrome = !!window.chrome && !!window.chrome.webstore;
     var isFirefox = typeof InstallTrigger !== 'undefined';
     var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
@@ -10,6 +11,8 @@ $(document).ready(function() {
         JSSDKDemo.create_alert("incompatible-browser", "It appears that you are using an unsupported browser. Please try this demo on Chrome, Firefox, or Opera.");
     }
 });
+
+
 
 var JSSDKDemo = (function() {
     var detector = null;
@@ -26,7 +29,7 @@ var JSSDKDemo = (function() {
     
     var time_left_sec = 0;
 
-    var emotions = ["joy", "anger", "disgust", "contempt", "surprise"];
+    var emotions = ["joy", "anger", "sadness", "contempt", "surprise"];
     var colors = ["#FFFFFF", "orangered", "deeppink", "yellow", "green"];
     var selected_emotion = "all";
     var svg_width = 720;

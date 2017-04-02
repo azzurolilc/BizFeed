@@ -226,23 +226,34 @@ text.time {
     width: 110px;
     height: 30px;
     line-height: 28px;
+    text-align: center;
 }
 
 .all-box {
     background: #767944;
 }
 .joy-box {
-    background: white;
+    background: rgba(255, 99, 132, 0.2);
+    border-style: solid;
+    border-color: rgba(255,99,132,1);
 }
 .anger-box {
-    background: orangered;
+    background: rgba(54, 162, 235, 0.2);
+    border-style: solid;
+    border-color: rgba(54, 162, 235, 1);
 }
 .contempt-box {
-    background: yellow;
+    background: rgba(255, 206, 86, 0.2);
+    border-style: solid;
+    border-color: rgba(255, 206, 86, 1);
 }
 .disgust-box {
-    background: deeppink;
+    background: rgba(75, 192, 192, 0.2);
+    border-style: solid;
+    border-color: rgba(75, 192, 192, 1);
 }
 .surprise-box {
-    background: green;
+    background: rgba(153, 102, 255, 0.2);
+    border-style: solid;
+    border-color: rgba(153, 102, 255, 1);
 }

@@ -70,7 +70,14 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Mz. X</a></li>
+        <li><a href="#" >Hello, 
+<?php
+$uname = $_GET["username"];
+  // The value of the variable name is found
+  echo '<span id="headusername">'.$uname.'</span>';
+
+  ?>
+        </a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -78,7 +85,7 @@
             <li><a href="#">History</a></li>
 <!--             <li><a href="#">Foobar</a></li>
 -->            <li role="separator" class="divider"></li>
-<li><a href="#">Log Out</a></li>
+<li><a href="login.html">Log Out</a></li>
 </ul>
 </li>
 </ul>
@@ -86,10 +93,28 @@
 </div><!-- /.container-fluid -->
 </nav>
 
+
 <script>
-var username = GetURLParameter('username');
-alert("username");
+var text = document.getElementById("headusername").innerHTML;
+
+if (text == "admin") {
+  window.location.href = 'stat.php';
+}
+
+function nextpage1() {
+        document.getElementById("gotopage1").action = "index.php";
+        document.getElementById("curuser1").value = text;
+}
+function nextpage2() {
+        document.getElementById("gotopage2").action = "indexv2.php";
+        document.getElementById("curuser2").value = text;
+}
+function nextpage3() {
+        document.getElementById("gotopage3").action = "indexv3.php";
+        document.getElementById("curuser3").value = text;
+}
 </script>
+
 
 <body>
 
@@ -109,8 +134,10 @@ alert("username");
             <h3>Massive Black Holes Whip Dark Matter Into a Frenzy</h3>
             <img class="imgsize" src="https://img.youtube.com/vi/B88UyrkryRw/maxresdefault.jpg" />
             <!--       <iframe width="560" height="315" src="https://www.youtube.com/embed/B88UyrkryRw" frameborder="0" allowfullscreen></iframe> -->
-            <form action="index.php">
-             <input class="butt" type="submit" value="Watch Now" />
+
+            <form id="gotopage1">
+            <input id="curuser1" type=hidden name="username">
+             <input class="butt" type="submit" value="Watch Now" onclick="nextpage1()"/>
            </form>
          </div>
 
@@ -120,18 +147,23 @@ alert("username");
           <h3>NASA Sets a Fire in Space—For Science!</h3>
           <img class="imgsize" src="https://img.youtube.com/vi/qA6HLeGw8xg/maxresdefault.jpg" ></img>
           <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/qA6HLeGw8xg" frameborder="0" allowfullscreen></iframe> -->
-          <form action="index.php">
-           <input class="butt" type="submit" value="Watch Now" />
-         </form>
+          <form id="gotopage2">
+            <input id="curuser2" type=hidden name="username">
+             <input class="butt" type="submit" value="Watch Now" onclick="nextpage2()"/>
+           </form>
        </div>
 
        <div class="v">
         <h3>[Watched]Science of Swimming Ft. Ryan Lochte & Conor Dwyer</h3>
         <img id="watched" class="imgsize"  src="https://img.youtube.com/vi/tbzigjiQ45g/maxresdefault.jpg"></img>
         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/tbzigjiQ45g" frameborder="0" allowfullscreen></iframe> -->
-        <form action="index.php">
+        <!-- <form action="index.php">
           <input class="butt_watched" type="submit" value="Watch Again" />
-        </form>
+        </form> -->
+        <form id="gotopage3">
+            <input id="curuser3" type=hidden name="username">
+             <input class="butt_watched" type="submit" value="Watch Again" onclick="nextpage3()"/>
+           </form>
       </div>
 
     </div>

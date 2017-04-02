@@ -200,7 +200,7 @@
         <div >
 
           <div class="col-sm-3 col-md-6">
-            <iframe width="650" height="480" src="https://www.youtube.com/embed/B88UyrkryRw" frameborder="0" allowfullscreen></iframe> 
+            <iframe width="650" height="480" src="https://www.youtube.com/embed/tbzigjiQ45g" frameborder="0" allowfullscreen></iframe> 
           </div>
 
           <div  class="col-sm-3 col-md-6" id="facevideo-node" >
@@ -275,38 +275,30 @@
 
       
 
-      
+      <div id="someDiv" style="color:#000000"></div>
 
       <div  role="group" aria-label="...">
     <!-- <button type="button" class="btn btn-default">Left</button>
     <button type="button" class="btn btn-default">Middle</button>
     <button type="button" class="btn btn-default">Right</button> -->
 
-<!--     <div class="col-sm-6" style="text-align:center">
- -->    <!-- <input id="someInput" style="border:2px solid #000000; line-height: 35px; height: 35px;" type="text"> -->
-    <!-- <br> -->
-<!--     <input type="button" class="btn btn-default" value="Enter your name" onClick="doStuff()">
- -->    <!-- </div> -->
- <span class="col-sm-4" id="someDiv" style="color:#ffffff; text-align: right">
-        <?php
-
-  // The value of the variable name is found
-  echo $_GET["username"];
-
-  ?>
-      </span>
-    <div class="col-sm-4" style="text-align:center">
-    <input type="submit" class="btn btn-default button" name="insert" value="Store Data" />
-    <!-- <form action="stat.php" >
-      <input type="submit" class="btn btn-default" value="Check Statistic" />
-    </form> -->
+    <div class="col-sm-6" style="text-align:center">
+    <input id="someInput" style="border:2px solid #000000; line-height: 35px; height: 35px;" type="text">
+    <br>
+    <input type="button" class="btn btn-default" value="Enter your name" onClick="doStuff()">
     </div>
-<!-- <div class="col-sm-6" style="text-align: center">
+    <div class="col-sm-6" style="text-align:center">
+    <input type="submit" class="btn btn-default button" name="insert" value="Store Data" />
+    <form action="stat.php" >
+      <input type="submit" class="btn btn-default" value="Check Statistic" />
+    </form>
+    </div>
+<div class="col-sm-6" style="text-align: center">
     <div class="row ">
     <div id="radar0" class="radar"></div>
 
   </div>
-  </div> -->
+  </div>
   </div>
 
 
@@ -347,7 +339,7 @@
   {
     var nameElement = document.getElementById("someInput");
     var theName = nameElement.value;
-    // document.getElementById("someDiv").innerHTML += theName;
+    document.getElementById("someDiv").innerHTML += theName;
 
   }
 

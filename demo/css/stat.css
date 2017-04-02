@@ -1,11 +1,26 @@
+nav {
+   font-size: 170%;
+   font-family: 'Open Sans Condensed', sans-serif;
+   background-color: white;
+}
+
+body {
+    background-color: dark; 
+    margin-bottom: 15px;
+    font-size: 130%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    align-items: center;
+}
+
+
 th, td {
     padding: 10px;
     white-space:nowrap;
 }
 
 .imgsize {
-    height: 75%;
-    width: 75%;
+    /*height: 75%;
+    width: 75%;*/
     margin:0px
 /*    alt:photo;
 */}
